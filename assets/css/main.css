@@ -6,3 +6,85 @@
 	height: 500px;
 	width: 100%;
 }
+
+.information-section {
+	background-color: #F7B617;
+}
+
+.information-desktop{
+	margin: 30px 0 30px 0;
+	border: 1px solid white;
+}
+.information-title{
+	font-family: "Raleway", Serif;
+	margin: 10px 0;
+	color: white;
+	font-size: 1.8rem;	
+}
+.information-p{
+	font-family: "Open Sans", Serif;
+	margin-bottom: 10px;
+	color: white;
+	font-size: 1.7rem;
+}
+.img-info{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 50px;
+}
+.info-info{
+	padding-top: 20px;
+	padding-bottom: 30px;
+	color: white;
+}
+
+.conduce-section{
+	background-image: url(../img/conduce.jpg);
+	background-size: 100% 1000px;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 100%;
+}
+.drive{
+	background-color: rgba(0,0,0,0.4);
+	padding: 50px;
+	color: white;
+}
+.drive h3{
+	font-family: "Raleway", Serif;
+}
+.drive p{
+	font-family: "Open Sans", Serif;
+}
+.drive input{
+	background-color: #F7B617;
+	font-family: "Open Sans", Serif;
+}
+
+.input-addon{
+	background-color: #F7B617;
+}
+
+#map {
+    height: 350px;
+    width: 40%;
+}
+
+@media (max-width: @screen-xs-max) {
+	.drive{
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	}
+	.drive h3{
+		font-family: "Raleway", Serif;
+	}
+	.drive p{
+		font-family: "Open Sans", Serif;
+	}
+	.drive input{
+		background-color: #F7B617;
+		font-family: "Open Sans", Serif;
+	}
+
+}

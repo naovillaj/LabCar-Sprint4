@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,600,700" rel="stylesheet">
 </head>
@@ -17,12 +18,12 @@
 					<span class="glyphicon glyphicon-align-justify"></span>
 				</div>
 				<div class="col-xs-offset-4">
-					<img src="assets/img/logo.png" alt="">
+					<img src="assets/img/logo.png" alt="logo" width="80">
 				</div>
 			</div>
 			<div class="row hidden-xs">
 				<div class="col-md-6">
-					<img src="assets/img/logo.png" alt="">
+					<img src="assets/img/logo.png" alt="logo" width="80">
 				</div>
 				<div class="col-md-6">
 					<ul class="nav nav-tabs pull-right">
@@ -71,35 +72,110 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
+		<div class="container-fluid information-section">
 			<div class="row visible-xs">
-				<div class="col-xs-12">
-					<p>La nueva app</p>
-					<img src="assets/img/celular.png" alt="celular">
+				<div class="col-xs-12 text-center information-desktop info-info">
+					<p class="information-title text-center"><strong>La nueva app</strong></p>
+					<img src="assets/img/celular.png" alt="celular" width="200">
 				</div>
-				<div class="col-xs-12 text-center">
+				<div class="col-xs-12 info-info text-center">
 					<p>Llega a tu destino aún más rápido</p>
 				</div>
 			</div>
 			<div class="row hidden-xs">
 				<div class="col-md-9">
-					<div class="row">
-						<div class="col-md-6">
-							<img src="assets/img/celular.png" alt="celular">
+					<div class="row information-desktop">
+						<div class="col-md-5 img-info">
+							<img src="assets/img/celular.png" alt="celular" width="250">
 						</div>
-						<div class="col-md-6">
-							<p><strong>Descarga la nueva app</strong></p>
-							<p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
-							<p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+						<div class="col-md-4 info-info">
+							<p class="information-title"><strong>Descarga la nueva app</strong></p>
+							<p class="information-p">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+							<p class="information-p">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="container-fluid conduce-section">
+			<div class="row">
+				<div class="col-md-4 pull-right col-xs-12 drive">
+					<h3>Conduce cuando quieras</h3>
+					<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+					<input class="btn" type="button" value="Conviértete en conductor">
+				</div>
+				
+			</div>
+		</div>
+		<div class="container-fluid tarifa-section">
+			<div class="row">
+				<div class="col-xs-6">
+					<h3>Tarifas</h3>
+					<p>Consulta las tarifas LabCar aquí</p>
+					<div class="input-group">
+						<div class="input-group-addon input-addon">
+							<img src="assets/img/circulo.png" alt="addon circle">
+						</div>
+	      				<input type="text" class="form-control" id=partida placeholder="Ingrese su punto de partida">
+					</div>
+					<div class="input-group">
+						<div class="input-group-addon input-addon">
+							<img src="assets/img/flecha.png" alt="addon arrow">
+						</div>
+	      				<input type="text" class="form-control" id=partida placeholder="Ingrese su destino">
+					</div>	
+					<input class="btn" type="button" value="Trazar ruta">      				
+				</div>
+				<div id="map" class="col-xs-6 hidden-xs"></div>
+			</div>
+		</div>
+		<footer class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<span class="fa fa-facebook-f"></span>
+						<span class="fa fa-twitter"></span>
+						<span class="fa fa-linkedin"></span>
+						<span class="fa fa-apple"></span>
+						<span class="glyphicon glyphicon-play"></span>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li><a href="#">Viaja</a></li>
+							<li><a href="#">Conduce</a></li>	
+							<li><a href="#">Ciudades</a></li>	
+							<li><a href="#">Tarifas</a></li>	
+							<li><a href="#">Entregas</a></li>	
+							<li><a href="#">Cómo funciona</a></li>	
+							<li><a href="#">Países</a></li>	
+							<li><a href="#">Seguridad</a></li>							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li><a href="#">Oportunidades</a></li>
+							<li><a href="#">Nuestra historia</a></li>
+							<li><a href="#">API de LabCar</a></li>
+							<li><a href="#">Eventos</a></li>
+							<li><a href="#">Desarrolladores</a></li>
+							<li><a href="#">Servicios</a></li>
+							<li><a href="#">Laboratoria</a></li>
+							<li><a href="#">Coders</a></li>	
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<img src="assets/img/app-store.png" alt="app-store" width="150">
+						<img src="assets/img/google-play.png" alt="google-play" width="150">
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
 	<script src="assets/js/app.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv_Ntm4QtPJcp9ZVgLHZkROh_450-dVmM&callback=initMap"
+    async defer></script>
 </body>
 </html>
