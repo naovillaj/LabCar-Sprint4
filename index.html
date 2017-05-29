@@ -14,14 +14,33 @@
 	<div>
 		<div class="container navbar-section">
 			<div class="row visible-xs">
-				<div class="col-xs-2">
-					<span class="glyphicon glyphicon-align-justify"></span>
-				</div>
-				<div class="col-xs-offset-4">
-					<img src="assets/img/logo.png" alt="logo" width="80">
-				</div>
+				<div class="col-xs-12 menu-hamburguesa">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+					  <div class="panel panel-default">
+					    <div class="panel-heading" role="tab" id="headingOne">
+					      <h4 class="panel-title">
+					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					          <span class="glyphicon glyphicon-align-justify"></span>
+					          <img src="assets/img/logo.png" alt="logo" width="80">
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					      <div class="panel-body">
+					        <a href="#">Viaja</a>
+					      </div>
+					      <div class="panel-body">
+					        <a href="#">Conduce</a>
+					      </div>
+					      <div class="panel-body">
+					        <a href="#">Inicia Sesión</a>
+					      </div>
+					    </div>
+					  </div>
+					</div>				
+				</div>				
 			</div>
-			<div class="row hidden-xs">
+			<div class="row hidden-xs nav-header">
 				<div class="col-md-6">
 					<img src="assets/img/logo.png" alt="logo" width="80">
 				</div>
@@ -36,36 +55,35 @@
 		</div>
 		<div class="container hero-section">
 			<div class="row visible-xs">
-				<div class="col-xs-8 pull-right">
-					<div class="row">
-						<div class="col-md-12">
-							<span>Comienza a viajar con <img src="assets/img/logo-blanco.png" alt="LabCar blanco"></span>
+				<div class="col-xs-8 hero-information pull-right">
+					<div class="row text-center">
+						<div class="col-xs-10">
+							<h1>Comienza a viajar con <img src="assets/img/logo-blanco.png" alt="LabCar blanco"></h1>
 						</div>
-						<div class="col-md-12">
+						<div class="col-xs-10">
 							<input class="btn btn-default" type="button" value="Descarga el app">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row hidden-xs">
-				<div class="col-md-4 pull-right">
+			<div class="row hidden-xs hero-box">
+				<div class="col-md-4 pull-right hero-information">
 					<div class="row">
-						<div class="col-md-12">
-							<h3>Disfruta del viaje</h3>
-							<h3>Eres dueño de tu tiempo</h3>
+						<div class="col-md-12 hero-line">
+							<h3>Disfruta del viaje <br>Eres dueño de tu tiempo</h3>							
 						</div>
-						<div class="col-md-12">
-							<span>Viaja con <img src="assets/img/logo-blanco.png" alt="LabCar blanco"></span>
+						<div class="col-md-12 hero-line">
+							<h5>Viaja con  <img src="assets/img/logo-blanco.png" alt="LabCar blanco" width="80"></h5>
 						</div>
-						<div class="col-md-12">REGISTRATE</div>
-						<div class="col-md-12">
+						<div class="col-md-12 hero-line">REGISTRATE</div>
+						<div class="col-md-12 hero-line">
 							<div class="row">
-								<div class="col-md-4"></div>
+								<div class="col-md-4"><hr></div>
 								<div class="col-md-4">O bien</div>
-								<div class="col-md-4"></div>
+								<div class="col-md-4"><hr></div>
 							</div>
 						</div>
-						<div class="col-md-12">
+						<div class="col-md-12 hero-line">
 							<input class="btn btn-default" type="button" value="Conviértete en un conductor">
 						</div>
 					</div>
@@ -74,22 +92,22 @@
 		</div>
 		<div class="container-fluid information-section">
 			<div class="row visible-xs">
-				<div class="col-xs-12 text-center information-desktop info-info">
-					<p class="information-title text-center"><strong>La nueva app</strong></p>
+				<div class="col-xs-12 text-center information-mobile info-info">
+					<h2 class="information-title text-center"><strong>La nueva app</strong></h2>
 					<img src="assets/img/celular.png" alt="celular" width="200">
 				</div>
 				<div class="col-xs-12 info-info text-center">
-					<p>Llega a tu destino aún más rápido</p>
+					<h3><strong>Llega a tu destino aún más rápido</strong></h3>
 				</div>
 			</div>
 			<div class="row hidden-xs">
-				<div class="col-md-9">
+				<div class="col-md-9 p-l">
 					<div class="row information-desktop">
 						<div class="col-md-5 img-info">
 							<img src="assets/img/celular.png" alt="celular" width="250">
 						</div>
-						<div class="col-md-4 info-info">
-							<p class="information-title"><strong>Descarga la nueva app</strong></p>
+						<div class="col-md-5 info-info">
+							<h3 class="information-title"><strong>Descarga la nueva app</strong></h3>
 							<p class="information-p">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
 							<p class="information-p">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
 						</div>
@@ -100,7 +118,7 @@
 		<div class="container-fluid conduce-section">
 			<div class="row">
 				<div class="col-md-4 pull-right col-xs-12 drive">
-					<h3>Conduce cuando quieras</h3>
+					<h3><strong>Conduce cuando quieras</strong></h3>
 					<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
 					<input class="btn" type="button" value="Conviértete en conductor">
 				</div>
@@ -108,29 +126,122 @@
 			</div>
 		</div>
 		<div class="container-fluid tarifa-section">
-			<div class="row">
-				<div class="col-xs-6">
-					<h3>Tarifas</h3>
-					<p>Consulta las tarifas LabCar aquí</p>
-					<div class="input-group">
-						<div class="input-group-addon input-addon">
-							<img src="assets/img/circulo.png" alt="addon circle">
+			<div class="row visible-xs">
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-10 text-center">
+							<h3>Tarifas</h3>
+							<p>Consulta las tarifas LabCar aquí</p>
+							<div class="input-group">
+								<div class="input-group-addon input-addon">
+									<img src="assets/img/circulo.png" alt="addon circle">
+								</div>
+				      			<input type="text" class="form-control" id=partida placeholder="Ingrese su punto de partida">
+							</div>
+							<div class="input-group">
+								<div class="input-group-addon input-addon">
+									<img src="assets/img/flecha.png" alt="addon arrow">
+								</div>
+				      			<input type="text" class="form-control" id=partida placeholder="Ingrese su destino">
+							</div>	
+							<input class="btn btn-tarifa" type="button" value="¡TRAZAR RUTA!">      				
 						</div>
-	      				<input type="text" class="form-control" id=partida placeholder="Ingrese su punto de partida">
 					</div>
-					<div class="input-group">
-						<div class="input-group-addon input-addon">
-							<img src="assets/img/flecha.png" alt="addon arrow">
-						</div>
-	      				<input type="text" class="form-control" id=partida placeholder="Ingrese su destino">
-					</div>	
-					<input class="btn" type="button" value="Trazar ruta">      				
 				</div>
-				<div id="map" class="col-xs-6 hidden-xs"></div>
+			</div>
+			<div class="row hidden-xs">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-10">
+								<h3>Tarifas</h3>
+								<p>Consulta las tarifas LabCar aquí</p>
+								<div class="input-group">
+									<div class="input-group-addon input-addon">
+										<img src="assets/img/circulo.png" alt="addon circle">
+									</div>
+				      				<input type="text" class="form-control" id=partida placeholder="Ingrese su punto de partida">
+								</div>
+								<div class="input-group">
+									<div class="input-group-addon input-addon">
+										<img src="assets/img/flecha.png" alt="addon arrow">
+									</div>
+				      				<input type="text" class="form-control" id=partida placeholder="Ingrese su destino">
+								</div>
+								<div class="row">
+									<div class="col-md-10 text-center">
+										<input class="btn btn-tarifa" type="button" value="¡TRAZAR RUTA!">      
+									</div>
+								</div>													
+							</div>
+						</div>
+					</div>
+				<div class="col-md-5 text-center div-map">
+					<div id="map"></div>
+				</div>
 			</div>
 		</div>
 		<footer class="container-fluid">
-			<div class="container">
+			<div class="visible-xs">
+				<div class="row">
+					<div class="col-md-12">
+						<img src="assets/img/logo-blanco.png" alt="logo blanco">
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 pull-left">
+						<ul>
+							<li><a href="#">Viaja</a></li>
+							<li><a href="#">Conduce</a></li>	
+							<li><a href="#">Ciudades</a></li>	
+							<li><a href="#">Tarifas</a></li>	
+							<li><a href="#">Entregas</a></li>	
+							<li><a href="#">Cómo funciona</a></li>	
+							<li><a href="#">Países</a></li>	
+							<li><a href="#">Seguridad</a></li>							
+						</ul>
+					</div>
+					<div class="col-xs-6 pull-right">
+						<div>
+							<span class="fa fa-facebook-f"></span>
+							<span class="fa fa-twitter"></span>
+							<span class="fa fa-linkedin"></span>
+							<span class="fa fa-apple"></span>
+							<span class="glyphicon glyphicon-play"></span>
+						</div>
+						<div>
+							<img src="assets/img/app-store.png" alt="app-store" width="150">
+							<img src="assets/img/google-play.png" alt="google-play" width="150">
+						</div>
+					</div>				
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<hr>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-12">
+						&copy; 2017 LabCar technologies Inc.
+					</div>
+				</div>
+			</div>
+			<div class="container hidden-xs">
+				<div class="row">
+					<div class="col-md-12">
+						<img src="assets/img/logo-blanco.png" alt="logo blanco">
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<hr>
+					</div>
+				</div>
+
 				<div class="row">
 					<div class="col-md-3">
 						<span class="fa fa-facebook-f"></span>
@@ -166,6 +277,16 @@
 					<div class="col-md-3">
 						<img src="assets/img/app-store.png" alt="app-store" width="150">
 						<img src="assets/img/google-play.png" alt="google-play" width="150">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<hr>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-12">
+						&copy; 2017 LabCar technologies Inc.
 					</div>
 				</div>
 			</div>

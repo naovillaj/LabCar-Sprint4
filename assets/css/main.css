@@ -1,10 +1,65 @@
+.navbar-section{
+	padding: 10px 0;
+	font-family: "Open Sans", Serif;
+}
+.navbar-section img{
+	padding-top: 10px;
+}
+
+.nav-header a{
+	color: #2B2B2B;
+	font-weight: 600;
+}
+.nav-tabs{
+	border-bottom: none;
+}
+.panel-title span{
+	margin-left: 20px;
+	font-size: 20px;
+}
+.panel-title img{
+	margin-left: 150px;
+}
+.panel-default > .panel-heading{
+	background-color: white;
+	font-family: "Open Sans", Serif;
+}
+.panel-heading, .panel-body{
+	padding: 40px 15px;	
+}
+.panel-body a{
+	color: #2B2B2B;
+	font-weight: bold;
+}
+.panel-body a:hover{
+	color: darkgrey;
+	font-weight: bold;
+	text-decoration: none;
+}
+
 .hero-section {
 	background-image: url(../img/taxi.jpg);
 	background-size: 100% 100%;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
-	height: 500px;
+	height: 600px;
 	width: 100%;
+	font-family: "Raleway", Serif;
+}
+.hero-box{
+	padding: 150px 0;
+}
+.hero-information{
+	color: white;
+	background-color: #F7B617;
+	padding: 20px;
+}
+.hero-line{
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+.hero-box input{
+	font-weight: bold;
 }
 
 .information-section {
@@ -12,20 +67,28 @@
 }
 
 .information-desktop{
+	padding: 30px 0 30px 0;
 	margin: 30px 0 30px 0;
 	border: 1px solid white;
+}
+.information-mobile{
+	padding: 30px 0 30px 0;
+	margin: 30px 0 30px 0;
+	border: 1px solid white;
+}
+.p-l{
+	padding-left: 0;
 }
 .information-title{
 	font-family: "Raleway", Serif;
 	margin: 10px 0;
 	color: white;
-	font-size: 1.8rem;	
 }
 .information-p{
 	font-family: "Open Sans", Serif;
 	margin-bottom: 10px;
 	color: white;
-	font-size: 1.7rem;
+	font-size: 1.8rem;
 }
 .img-info{
 	padding-top: 30px;
@@ -48,43 +111,136 @@
 }
 .drive{
 	background-color: rgba(0,0,0,0.4);
-	padding: 50px;
+	padding: 70px;
 	color: white;
+	height: 500px;	
 }
 .drive h3{
 	font-family: "Raleway", Serif;
+	margin-bottom: 15px;
+	font-size: 23px;
 }
 .drive p{
 	font-family: "Open Sans", Serif;
+	margin-bottom: 15px;
+	font-size: 1.5rem;
 }
 .drive input{
 	background-color: #F7B617;
 	font-family: "Open Sans", Serif;
+	margin-bottom: 10px;
+	color: white;
 }
+.tarifa-section{
+	background-color: #F7B617;
+	color: white;
+	padding: 50px;
+}
+.div-map{
+	padding: 10px;
+	border: 1px solid white;
+	margin-left: 30px;
+}
+.input-group-addon{
+	border: none;
+}
+.input-group .form-control{
+	width: 70%;
+	background-color: #F7B617	
+}
+.input-group input{
+	margin: 15px;
+}
+.form-control{
+	border-radius: 10px;
+	border: 1px solid white;
+}
+.form-control::-webkit-input-placeholder { color: white; background-color: #F7B617}
+.form-control:-moz-placeholder { color: white; background-color: #F7B617}
+.form-control::-moz-placeholder { color: white; background-color: #F7B617}
+.form-control:-ms-input-placeholder { color: white; background-color: #F7B617 }
 
 .input-addon{
 	background-color: #F7B617;
 }
 
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.btn-tarifa{
+	background-color: white;
+	color: #2B2B2B;
+	margin-top: 50px;
+	font-weight: bold;
+}
 #map {
     height: 350px;
-    width: 40%;
+    width: 100%;
 }
 
-@media (max-width: @screen-xs-max) {
+footer{
+	background-color: #2B2B2B;
+	font-family: "Open Sans", Serif;
+	color: white;
+	padding: 50px;
+}
+footer span{
+	color: white;
+}
+footer li{
+	list-style: none;
+	padding-bottom: 10px;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}
+footer a:hover{
+	text-decoration: none;
+	color: gray;
+}
+footer img{
+	padding-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+	.hero-information{
+		margin: 120px 0;
+	}
+	.hero-information div div{
+		margin-top: 10px;
+	}
+	.hero-information input{
+		font-weight: bold;
+	}
 	.drive{
 	background-color: rgba(0,0,0,0.4);
 	color: white;
+	padding-left: 10px;
 	}
 	.drive h3{
 		font-family: "Raleway", Serif;
+		margin-bottom: 15px;
+		font-size: 3.2rem;
+		font-weight: bold;
 	}
 	.drive p{
 		font-family: "Open Sans", Serif;
+		margin-bottom: 15px;
+		font-size: 3rem;
 	}
 	.drive input{
 		background-color: #F7B617;
 		font-family: "Open Sans", Serif;
+		font-size: 3rem;
 	}
-
+	.input-group .form-control{
+		width: 100%;
+		background-color: #F7B617	
+}
+	footer ul{
+		padding-left: 0;
+	}
 }
