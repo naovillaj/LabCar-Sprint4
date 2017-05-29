@@ -22,13 +22,13 @@ Se utilizó el siguiente framework: Bootstrap 3.
 Esta es la versión final de la página web del <a href="https://naovillaj.github.io/LabCar-Sprint4/">LabCar</a>
 
 Versión Desktop: 
-<br><img src="assets/img/vistas/desktop.png">
+<br><img src="assets/img/vistas/labcar/desktop.png">
 
 Versión Mobile:
-<br><center><img src="assets/img/vistas/mobile.png"></center>
+<br><center><img src="assets/img/vistas/labcar/mobile.png"></center>
 
 Versión Mobile - NavBar: 
-<br><img src="assets/img/vistas/mobile-navbar.png">
+<br><img src="assets/img/vistas/labcar/mobile-navbar.png">
 
 ## Desarrollado con
 
