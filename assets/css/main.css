@@ -25,7 +25,7 @@
 	font-family: "Open Sans", Serif;
 }
 .panel-heading, .panel-body{
-	padding: 40px 15px;	
+	padding: 40px 15px;
 }
 .panel-body a{
 	color: #2B2B2B;
@@ -39,8 +39,8 @@
 
 .hero-section {
 	background-image: url(../img/taxi.jpg);
-	background-size: 100% 100%;
-	background-position: top;
+	background-size: cover;
+	background-position: bottom center;
 	background-repeat: no-repeat;
 	height: 600px;
 	width: 100%;
@@ -113,7 +113,7 @@
 	background-color: rgba(0,0,0,0.4);
 	padding: 70px;
 	color: white;
-	height: 500px;	
+	height: 500px;
 }
 .drive h3{
 	font-family: "Raleway", Serif;
@@ -131,6 +131,10 @@
 	margin-bottom: 10px;
 	color: white;
 }
+
+#partida, #destino{
+	color: white;
+}
 .tarifa-section{
 	background-color: #F7B617;
 	color: white;
@@ -146,7 +150,7 @@
 }
 .input-group .form-control{
 	width: 70%;
-	background-color: #F7B617	
+	background-color: #F7B617
 }
 .input-group input{
 	margin: 15px;
@@ -238,7 +242,7 @@ footer img{
 	}
 	.input-group .form-control{
 		width: 100%;
-		background-color: #F7B617	
+		background-color: #F7B617
 }
 	footer ul{
 		padding-left: 0;

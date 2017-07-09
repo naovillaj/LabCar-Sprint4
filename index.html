@@ -15,7 +15,7 @@
 		<div class="container navbar-section">
 			<div class="row visible-xs">
 				<div class="col-xs-12 menu-hamburguesa">
-					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					  <div class="panel panel-default">
 					    <div class="panel-heading" role="tab" id="headingOne">
 					      <h4 class="panel-title">
@@ -37,8 +37,8 @@
 					      </div>
 					    </div>
 					  </div>
-					</div>				
-				</div>				
+					</div>
+				</div>
 			</div>
 			<div class="row hidden-xs nav-header">
 				<div class="col-md-6">
@@ -70,7 +70,7 @@
 				<div class="col-md-4 pull-right hero-information">
 					<div class="row">
 						<div class="col-md-12 hero-line">
-							<h3>Disfruta del viaje <br>Eres dueño de tu tiempo</h3>							
+							<h3>Disfruta del viaje <br>Eres dueño de tu tiempo</h3>
 						</div>
 						<div class="col-md-12 hero-line">
 							<h5>Viaja con  <img src="assets/img/logo-blanco.png" alt="LabCar blanco" width="80"></h5>
@@ -122,60 +122,38 @@
 					<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
 					<input class="btn" type="button" value="Conviértete en conductor">
 				</div>
-				
+
 			</div>
 		</div>
 		<div class="container-fluid tarifa-section">
-			<div class="row visible-xs">
-				<div class="col-xs-12">
+			<div class="row">
+				<div class="col-md-6 col-xs-12">
 					<div class="row">
-						<div class="col-xs-10 text-center">
-							<h3>Tarifas</h3>
-							<p>Consulta las tarifas LabCar aquí</p>
-							<div class="input-group">
-								<div class="input-group-addon input-addon">
-									<img src="assets/img/circulo.png" alt="addon circle">
-								</div>
-				      			<input type="text" class="form-control" id=partida placeholder="Ingrese su punto de partida">
-							</div>
-							<div class="input-group">
-								<div class="input-group-addon input-addon">
-									<img src="assets/img/flecha.png" alt="addon arrow">
-								</div>
-				      			<input type="text" class="form-control" id=partida placeholder="Ingrese su destino">
-							</div>	
-							<input class="btn btn-tarifa" type="button" value="¡TRAZAR RUTA!">      				
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row hidden-xs">
-				<div class="col-md-6">
-					<div class="row">
-						<div class="col-md-10">
+						<div class="col-md-10 col-xs-10 text-center">
 								<h3>Tarifas</h3>
 								<p>Consulta las tarifas LabCar aquí</p>
 								<div class="input-group">
 									<div class="input-group-addon input-addon">
 										<img src="assets/img/circulo.png" alt="addon circle">
 									</div>
-				      				<input type="text" class="form-control" id=partida placeholder="Ingrese su punto de partida">
+				      				<input id="partida" type="text" class="form-control" placeholder="Ingrese su punto de partida">
 								</div>
 								<div class="input-group">
 									<div class="input-group-addon input-addon">
 										<img src="assets/img/flecha.png" alt="addon arrow">
 									</div>
-				      				<input type="text" class="form-control" id=partida placeholder="Ingrese su destino">
+				      				<input id="destino" type="text" class="form-control" placeholder="Ingrese su destino">
 								</div>
 								<div class="row">
 									<div class="col-md-10 text-center">
-										<input class="btn btn-tarifa" type="button" value="¡TRAZAR RUTA!">      
+										<input id="ruta" class="btn btn-tarifa" type="button" value="¡TRAZAR RUTA!">
+										<h2 id="pasaje" class="hide"></h2>
 									</div>
-								</div>													
+								</div>
 							</div>
 						</div>
 					</div>
-				<div class="col-md-5 text-center div-map">
+				<div class="col-md-5 text-center div-map hidden-xs">
 					<div id="map"></div>
 				</div>
 			</div>
@@ -185,7 +163,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<img src="assets/img/logo-blanco.png" alt="logo blanco">
-					</div>					
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
@@ -196,13 +174,13 @@
 					<div class="col-xs-6 pull-left">
 						<ul>
 							<li><a href="#">Viaja</a></li>
-							<li><a href="#">Conduce</a></li>	
-							<li><a href="#">Ciudades</a></li>	
-							<li><a href="#">Tarifas</a></li>	
-							<li><a href="#">Entregas</a></li>	
-							<li><a href="#">Cómo funciona</a></li>	
-							<li><a href="#">Países</a></li>	
-							<li><a href="#">Seguridad</a></li>							
+							<li><a href="#">Conduce</a></li>
+							<li><a href="#">Ciudades</a></li>
+							<li><a href="#">Tarifas</a></li>
+							<li><a href="#">Entregas</a></li>
+							<li><a href="#">Cómo funciona</a></li>
+							<li><a href="#">Países</a></li>
+							<li><a href="#">Seguridad</a></li>
 						</ul>
 					</div>
 					<div class="col-xs-6 pull-right">
@@ -217,7 +195,7 @@
 							<img src="assets/img/app-store.png" alt="app-store" width="150">
 							<img src="assets/img/google-play.png" alt="google-play" width="150">
 						</div>
-					</div>				
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
@@ -234,7 +212,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<img src="assets/img/logo-blanco.png" alt="logo blanco">
-					</div>					
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
@@ -253,13 +231,13 @@
 					<div class="col-md-3">
 						<ul>
 							<li><a href="#">Viaja</a></li>
-							<li><a href="#">Conduce</a></li>	
-							<li><a href="#">Ciudades</a></li>	
-							<li><a href="#">Tarifas</a></li>	
-							<li><a href="#">Entregas</a></li>	
-							<li><a href="#">Cómo funciona</a></li>	
-							<li><a href="#">Países</a></li>	
-							<li><a href="#">Seguridad</a></li>							
+							<li><a href="#">Conduce</a></li>
+							<li><a href="#">Ciudades</a></li>
+							<li><a href="#">Tarifas</a></li>
+							<li><a href="#">Entregas</a></li>
+							<li><a href="#">Cómo funciona</a></li>
+							<li><a href="#">Países</a></li>
+							<li><a href="#">Seguridad</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3">
@@ -271,7 +249,7 @@
 							<li><a href="#">Desarrolladores</a></li>
 							<li><a href="#">Servicios</a></li>
 							<li><a href="#">Laboratoria</a></li>
-							<li><a href="#">Coders</a></li>	
+							<li><a href="#">Coders</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3">
@@ -296,7 +274,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
 	<script src="assets/js/app.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv_Ntm4QtPJcp9ZVgLHZkROh_450-dVmM&callback=initMap"
-    async defer></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv_Ntm4QtPJcp9ZVgLHZkROh_450-dVmM&libraries=places&callback=initMap"></script>
 </body>
 </html>

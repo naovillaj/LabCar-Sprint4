@@ -4,35 +4,64 @@ function initMap() {
     zoom: 18,
     center: peru
   });
-  var marker = new google.maps.Marker({
-    position: peru,
-    map: map
-  });
-  var infoWindow = new google.maps.InfoWindow({map: map});
 
- if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude,
-        zoom:18
-      };
+  var marker;
+  var functionLocalization = function(position) {
+    var pos = {
+      lat: position.coords.latitude,
+      lng: position.coords.longitude,
+    }
 
-      infoWindow.setPosition(pos);
-      infoWindow.setContent('Location found.');
-      map.setCenter(pos);
-    }, function() {
-      handleLocationError(true, infoWindow, map.getCenter());
+    map.setCenter(pos);
+    map.setZoom(18);
+
+    marker = new google.maps.Marker({
+      position: pos,
+      map: map
     });
-  } else {
-    // Browser doesn't support Geolocation
-    handleLocationError(false, infoWindow, map.getCenter());
   }
 
-  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-    infoWindow.setPosition(pos);
-    infoWindow.setContent(browserHasGeolocation ?
-                          'Error: The Geolocation service failed.' :
-                          'Error: Your browser doesn\'t support geolocation.');
+  var functionNotFounded = function(error) {
+    alert("Encontramos un inconveniente para ver tu ubicación");
   }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(functionLocalization, functionNotFounded);
+  }
+
+  var originInput = document.getElementById("partida");
+  var destinationInput = document.getElementById("destino");
+  new google.maps.places.Autocomplete(originInput);
+  new google.maps.places.Autocomplete(destinationInput);
+
+  var directionsService = new google.maps.DirectionsService;
+  var directionsDisplay = new google.maps.DirectionsRenderer;
+
+  var calculateAndDisplayRoute = function(directionsService, directionsDisplay){
+    directionsService.route({
+      origin: originInput.value,
+      destination: destinationInput.value,
+      travelMode: 'DRIVING'
+    },
+    function(response, status){
+      if(status === 'OK') {
+        var distance = Number((response.routes[0].legs[0].distance.text.replace("km","")).replace(",","."));
+        var tariff = document.getElementById("pasaje");
+        tariff.classList.remove("hide");
+
+        var cost = distance * 1.75;
+        tariff.innerHTML = "S/. " + parseInt(cost);
+        directionsDisplay.setDirections(response);
+        marker.setMap(null);
+      } else {
+        windows.alert("Se ha producido un error en su solicitud");
+      }
+    });
+  }
+
+  directionsDisplay.setMap(map);
+  var traceRoute = function(){
+    calculateAndDisplayRoute(directionsService, directionsDisplay);
+  };
+  document.getElementById("ruta").addEventListener("click", traceRoute);
 }
